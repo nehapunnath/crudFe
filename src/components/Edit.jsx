@@ -28,7 +28,7 @@ function Edit({emp}) {
             }
             else{
               const result=await updateEmployeeApi(emp._id,editemp)
-              console.log(result)
+              // console.log(result)
               if(result.status==200){
                 alert("Employee updated!!!")
                 handleClose()

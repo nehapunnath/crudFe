@@ -13,6 +13,6 @@ export const deleteEmployeeApi=async(id)=>{
     return await commonApi(`${base_url}/delemp/${id}`,"DELETE","",{})
 }
 
-export const updateEmployeeApi=async(data,id)=>{
+export const updateEmployeeApi=async(id,data)=>{
     return await commonApi(`${base_url}/updateemp/${id}`,"PUT","",data)
 }
